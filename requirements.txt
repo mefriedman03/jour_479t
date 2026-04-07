@@ -8,7 +8,6 @@ comm==0.2.3
 debugpy==1.8.19
 decorator==5.2.1
 executing==2.2.1
-peewee==3.17.6
 greenlet==3.3.0
 h11==0.16.0
 httpcore==1.0.9
@@ -50,4 +49,4 @@ traitlets==5.14.3
 typing-inspection==0.4.2
 typing_extensions==4.15.0
 urllib3==2.6.3
-wcwidth==0.2.14
+wcwidth==0.2.14schedule==1.2.2

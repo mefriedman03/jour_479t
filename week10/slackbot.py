@@ -11,7 +11,7 @@ client = WebClient(token=slack_token)
 
 # message we want to send
 # swap out the brackets for your name, or change the message entirely
-msg = "this is [add your name here], testing my bot!"
+msg = "bye"
 
 # this basically says, 'whenever this script runs, i want you to try to send the message above in the channel called jour479t'
 try:
