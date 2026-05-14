@@ -43,9 +43,10 @@ def daemonize():
     # Redirect standard file descriptors
     sys.stdout.flush()
     sys.stderr.flush()
+    log_file = '/tmp/slack_bot_scheduler.log'
     with open('/dev/null', 'r') as f:
         os.dup2(f.fileno(), sys.stdin.fileno())
-    with open('/dev/null', 'a+') as f:
+    with open(log_file, 'a+') as f:
         os.dup2(f.fileno(), sys.stdout.fileno())
         os.dup2(f.fileno(), sys.stderr.fileno())
 

@@ -102,7 +102,10 @@ def run_bot(channel=None):
         send_messages(grouped, channel=channel)
         print("Finished sending messages.")
     except Exception as e:
-        print(f"Error running bot: {e}")
+        print(f"Error running bot: {e}", flush=True)
+        import traceback
+        print(traceback.format_exc(), flush=True)
+        # Don't raise - let scheduler continue
 
 
 def parse_args():
